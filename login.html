@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="log-container">
+    <div class="form-container">
+      <h2>Welcome To Cindy`s Bakery</h2>
+      <form id="loginForm" onsubmit="return validateLogin()">
+        <input type="text" name="username" id="loginUsername" placeholder="Username" required>
+        <input type="password" name="password" id="loginPassword" placeholder="Password" required>
+        <p id="log-status"></p>
+        <button type="submit">Login</button>
+        <p><a href="signup.html">Create Account</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
