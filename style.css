@@ -14,9 +14,12 @@ body {
     color: var(--tri);
 }
 /* Nav Bar */
-nav {
+nav, #mainNav {
     background-color: var(--sec-color);
     height: 70px;
+}
+.container-fluid{
+    background: var(--sec-color);
 }
 #mainNav .nav-link {
 color: var(--primary);

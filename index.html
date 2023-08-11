@@ -13,13 +13,13 @@
 <body>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav">
-    <div class="container">
+    <div class="container-fluid px-5">
         <div class="logo">
             <img src="images/Cindys1stresto.png" alt="logo">
         </div>
         <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto py-4 py-lg-0">
               <li class="nav-item active">
@@ -37,6 +37,7 @@
               <li onclick="displayCartItems()" class="cartt nav-item"><i class="fa fa-shopping-cart"></i></li>
           </ul>
       </div>
+    </div>
 </nav>
 <!-- Hero Section -->
 <section class="p-5 text-center d-flex justify-content-center align-items-center row mt-5">
@@ -139,15 +140,15 @@
     <div class="section-content container">
         <h2 class="text-uppercase">Contact Us</h2>
         <p>If you have any inquiries or would like to place an order, please don't hesitate to get in touch with us:</p>
-        <div class="contact-box">
-            <ul>
+        <div class="contact-box row">
+            <ul class="col-lg-6 col-md-12">
                 <li><span>Address:</span> Santo Tomas, Isabela</li>
                 <li><span>Email:</span> Vanessapaguitan@gmail.com</li>
                 <li><span>Phone:</span> (+63) 975 822 8587</li>
                 <li><span>Delearship Inquiry</span></li>
                 <p>We welcome merchants who already run a business, grocery store, or food business. Learn how you can run an authorized Cindys Bakery sale outlet. Inquire now!</p>
             </ul>
-            <form class="contact-form">
+            <form class="contact-form col-lg-6 col-md-12">
                 <h3>We love to hear from our guests!</h3>
                 <input type="text" name="name" placeholder="*Name" required>
                 <input type="text" name="number" placeholder="Contact Number" required>
