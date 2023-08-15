@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindys Bakery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav">
+    <div class="container-fluid px-5">
+        <div class="logo">
+            <img src="images/Cindys1stresto.png" alt="logo">
+        </div>
+        <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto py-4 py-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li onclick="displayCartItems()" class="cartt nav-item"><i class="fa fa-shopping-cart"></i></li>
+          </ul>
+      </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section class="p-5 text-center d-flex justify-content-center align-items-center row mt-5">
+        <div class="content col-lg-6 col-12">
+            <h2 class="hero-title h1 mb-4 primary text-uppercase">Cindy`s Bakery</h2>
+            <p class="hero-description h5 mb-4 defaultc">Indulge your senses with our heavenly pastries, cakes, and cookies. We take pride in creating delightful treats that make every moment special.</p>
+            <a href="#products"><button class="text-uppercase">Order Now</button></a>
+        </div>
+        <div class="hero-image col-lg-6 col-12 d-flex justify-content-center align-items-center p-5">
+            <img src="images/bg-image.png" alt="cindysbake">
+        </div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="section-content container">
+        <div class="about-content">
+            <h1>“Good food in a good place”</h1>
+            <p>This is a promise that Cindys has delivered to its customers everyday since 1972.</p>
+        </div>
+        <div class="box-content row">
+            <div class="box col-lg-4 col-md-12">
+                <h3 class="mb-4 h5">HOW WE BEGAN</h3>
+                <p>Cindys began as a quaint neighborhood bakery that served freshly baked goods to the community in Tarlac City. It quickly gained popularity for its fluffy breads and buttery pastries that served as the breakfast and merienda of choice for many.</p>
+            </div>
+            <div class="box col-lg-4 col-md-12">
+                <h3 class="mb-4 h5">FROM BAKERY TO QSR AND BEYOND</h3>
+                <p>Launching off of its crowd-favorite breads and snack specials, Cindys transformed from a simple bakeshop into a full service eatery, buffing up its menu to include more savory dishes like its best selling Palabok and Chicken Barbecue.</p>
+            </div>
+            <div class="box col-lg-4 col-md-12">
+                <h3 class="mb-4 h5">IT’S ALWAYS BETTER THAN YOU REMEMBER</h3>
+                <p>Beloved by its patrons for its scrumptious food and welcoming atmosphere, Cindys has earned its place in the hearts and minds of the Filipino people. Its cherished heritage of serving hearty, heart-warming meals that remind people of home and family has given it the reputation of being the place to be.</p>
+            </div>
+        </div>                    
+    </div>
+</section>
+<!-- Product Section -->
+<section class="product-section py-5" id="products">
+    <h2 class="text-uppercase">Our Products</h2>
+    <div class="product-list row d-flex justify-content-center align-items-center" id="product-lists">
+    </div>
+</section>
+<!-- Side Cart -->
+<div class="side-cart">
+    <button class="close-btn" onclick="hideCart()">X</button>
+    <h3>Your Cart</h3>
+    <div class="cart-items">
+    </div>
+    <button class="checkout" onClick="window.location.reload();" id="checkout-btn">Checkout</button>
+</div>
+<!-- Contact Section -->
+<section class="section-bg py-5" id="contact">
+    <div class="section-content container">
+        <h2 class="text-uppercase">Contact Us</h2>
+        <p>If you have any inquiries or would like to place an order, please don't hesitate to get in touch with us:</p>
+        <div class="contact-box row">
+            <ul class="col-lg-6 col-md-12">
+                <li><span>Address:</span> Santo Tomas, Isabela</li>
+                <li><span>Email:</span> Vanessapaguitan@gmail.com</li>
+                <li><span>Phone:</span> (+63) 975 822 8587</li>
+                <li><span>Delearship Inquiry</span></li>
+                <p>We welcome merchants who already run a business, grocery store, or food business. Learn how you can run an authorized Cindys Bakery sale outlet. Inquire now!</p>
+            </ul>
+            <form class="contact-form col-lg-6 col-md-12">
+                <h3>We love to hear from our guests!</h3>
+                <input type="text" name="name" placeholder="*Name" required>
+                <input type="text" name="number" placeholder="Contact Number" required>
+                <input type="text" name="email" placeholder="*Email" required>
+                <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Cindy`s Bakery. All rights reserved.</p>
+</footer>
+<script src="javascript.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
